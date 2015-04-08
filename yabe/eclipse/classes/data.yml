@@ -1,0 +1,54 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+# User(bob):
+#   email: bob@gmail.com
+#   password: secret
+#   fullname: Bob
+
+User(savage):
+  email: demo@oopsplay.org
+  password: 123
+  fullname: savage
+User(savage2):
+  email: demo2@oopsplay.org
+  password: 123
+  fullname: savage2
+Post(firstSavagePost):
+  title: About the model layer
+  postedAt: 2009-03-25
+  author: savage
+  content: >
+           The content of the model layer
+Post(secondSavagePost):
+  title: About the model layer
+  postedAt: 2009-03-25
+  author: savage2
+  content: > 
+           The content of the model layer2
+Post(dhlPort):
+  title: The MVC application
+  postedAt: 2009-03-25
+  author: savage2
+  content: >
+           The Content of MVC
+Comment(c1):
+   author: Gust
+   content: >
+            You are right!
+   postedAt: 2009-03-25
+   post: firstSavagePost
+   
+Comment(c2):
+   author: Mike
+   content: >
+            I know that...
+   postedAt: 2009-03-25
+   post: firstSavagePost
+   
+Comment(c3):
+   author: Tom
+   content: >
+            good job.
+   postedAt: 2009-03-25
+   post: secondSavagePost
