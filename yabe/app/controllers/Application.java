@@ -6,7 +6,6 @@ import play.libs.Images;
 import play.cache.*;
 import play.data.validation.Required;
 import play.mvc.*;
-import groovy.transform.stc.FirstParam.FirstGenericType;
 
 import java.awt.Image;
 import java.util.*;
