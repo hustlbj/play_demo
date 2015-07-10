@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+ <head> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <meta charset="UTF-8" /> 
+  <title>红米手机2A － 小米手机官网</title> 
+  <meta name="description" content="红米手机2A官方网站，红米2A是千元4G双卡双待性价比王牌，联芯4核1.5GHz处理器4.7英寸IPS 全贴合屏幕，绝佳握感，2200mAh手机电池，红米2A还有5色多彩亲肤后盖可选。" /> 
+  <meta name="keywords" content="红米2A,红米手机,红米手机2A,红米2A官网" /> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+  <link rel="stylesheet" href="base.min.css" /> 
+  <script src="jquery.js"></script> 
+  <link rel="stylesheet" type="text/css" href="product-hongmi2.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="product-hongmi2a-overall.min.css" /> 
+  <script src="xmsg_ti.js"></script> 
+ </head> 
+ <body> 
+  <!-- .tite-topbar BEGIN --> 
+  <div class="site-topbar"> 
+   <div class="container"> 
+    <div class="topbar-nav"> 
+     <a href="http://www.mi.com/index.html">小米网</a> 
+     <span class="sep">|</span>
+     <a href="http://www.miui.com/" target="_blank">MIUI</a> 
+     <span class="sep">|</span>
+     <a href="http://www.miliao.com/" target="_blank">米聊</a> 
+     <span class="sep">|</span>
+     <a href="http://game.xiaomi.com/" target="_blank">游戏</a> 
+     <span class="sep">|</span>
+     <a href="http://www.duokan.com/" target="_blank">多看阅读</a> 
+     <span class="sep">|</span>
+     <a href="https://i.mi.com/" target="_blank">云服务</a> 
+     <span class="sep">|</span>
+     <a href="http://www.mi.com/c/appdownload/" target="_blank">小米网移动版</a> 
+     <span class="sep">|</span>
+     <a href="javascript:void(0);" class="J-modal-globalSites">Select region</a> 
+    </div> 
+    <div class="topbar-info J_userInfo"> 
+     <a data-needlogin="true" href="http://order.mi.com/site/login?ac=1">登录</a> 
+     <span class="sep">|</span> 
+     <a href="https://account.xiaomi.com/pass/register">注册</a> 
+    </div> 
+   </div> 
+  </div> 
+  <!-- .site-topbar END --> 
+
+  <!-- site-header BEGIN -->
+  <div class="site-header container"> 
+   <!-- logo -->
+   <div class="site-logo"> 
+    <a class="logo" href="http://www.mi.com/index.html" title="小米官网"><i class="iconfont"></i></a> 
+   </div> 
+
+   <div class="header-info"> 
+    <!-- 搜索框 -->
+    <div class="search-section"> 
+     <form id="J_searchForm" class="search-form clearfix" action="http://search.mi.com/search" method="get"> 
+      <!-- 输入框弹出的下拉候选 -->
+      <input class="search-text" type="search" name="keyword" autocomplete="off" data-search-config="{'defaultWords':[&quot;智能硬件&quot;,&quot;WiFi&quot;,&quot;自拍杆&quot;,&quot;移动电源&quot;,&quot;随身风扇&quot;,&quot;个性配件&quot;,&quot;充电线材&quot;,&quot;存储卡&quot;,&quot;配件优惠套装&quot;]}" placeholder="搜索您需要的商品" /> 
+      <input type="submit" class="search-btn iconfont" value="" /> 
+      <!--[if IE 6]><div class="ie6-fix"></div><![endif]--> 
+      <!-- 输入框中靠右边的热点候选 -->
+      <div class="hot-words"> 
+       <a href="http://search.mi.com/search_%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF">小米手环</a>
+       <a href="http://search.mi.com/search_%E8%80%B3%E6%9C%BA">耳机</a>
+       <a href="http://search.mi.com/search_%E6%8F%92%E7%BA%BF%E6%9D%BF">插线板</a> 
+      </div> 
+     </form> 
+    </div> 
+    <!-- 和搜索框在同一行的购物车-->
+    <div class="cart-section"> 
+     <a id="J_miniCart" class="mini-cart" href="http://static.mi.com/cart/"><i class="iconfont"></i>购物车<span class="mini-cart-num J_cartNum"></span></a> 
+     <div id="J_miniCartList" class="mini-cart-list"> 
+      <p class="loading">数据加载中，请稍后...</p> 
+     </div> 
+    </div> 
+   </div> 
+
+   <!-- 主菜单栏 -->
+   <div class="header-nav clearfix"> 
+    <!-- 主菜单中第一个特殊标签 -->
+    <div id="J_categoryContainer" class="nav-category"> 
+     <a class="btn-category-list" href="http://list.mi.com/">全部商品分类</a> 
+     <div class="nav-category-section" style="display: none;"> 
+      <ul class="nav-category-list"></ul> 
+     </div> 
+    </div> 
+
+    <!-- 主菜单中的常规标签 -->
+    <div class="nav-main"> 
+     <!-- ul -->
+     <ul class="nav-main-list J_menuNavMain clearfix"> 
+      <li class="nav-main-item"> <a href="http://www.mi.com/index.html"><span class="text">首页</span></a> </li> 
+      <li class="nav-main-item"> <a href="javascript:void(0);"><span class="text">小米手机</span><span class="arrow"></span></a>
+       <!-- 子菜单标签 --> 
+       <div class="nav-main-children"> 
+        <ul class="children-list clearfix"> 
+         <li class="first"> <a class="item-detail" href="http://www.mi.com/minote/"> <span class="title" style="font-size:20px;">小米Note</span> <span class="desc">大屏旗舰，HiFi 双卡双待</span> <span class="price"><b>2299</b>元起</span> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-minote_2x.jpg 2x" alt="小米Note" width="160" height="160" /> </span> </a> </li> 
+         <li> <a class="item-detail" href="http://www.mi.com/mi4/"> <span class="title" style="font-size:20px;">小米手机4</span> <span class="desc">工艺和手感，超乎想象</span> <span class="price"><b>1499</b>元</span> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mi4_2x.jpg 2x" alt="小米手机4" width="160" height="160" /> </span> <span class="desc">旗舰特价直降200</span> </a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-main-item"> <a href="javascript: void(0);"><span class="text">红米</span><span class="arrow"></span></a> 
+       <div class="nav-main-children"> 
+        <ul class="children-list clearfix"> 
+         <li class="first"> <a href="http://www.mi.com/hongmi2a/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongmi2a-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongmi2a-more.jpg 2x" alt="红米手机2A" width="140" height="140" /> </span> <span class="title">红米手机2A 4G版</span> <span class="desc">4.7英寸屏 / 联芯四核 / 双卡双待</span> <span class="price">无敌价：<b>499</b>元</span> </a> </li> 
+         <li> <a href="http://www.mi.com/hongmi2/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongmi2-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongmi2-more.jpg 2x" alt="红米手机2" width="140" height="140" /> </span> <span class="title">红米手机2 4G版</span> <span class="desc">4.7英寸屏 / 64位性能 / 双卡双待</span> <span class="price"><b>699</b>元起</span> </a> </li> 
+         <li> <a href="http://www.mi.com/note4gds/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongminote-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hongminote-more.jpg 2x" alt="红米手机2" width="140" height="140" /> </span> <span class="title">红米Note 4G版</span> <span class="desc">5.5英寸屏 / 64位性能 / 双卡双待</span> <span class="price">直降100 <b>699</b>元起</span> </a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-main-item"> <a href="http://www.mi.com/mipad/"><span class="text">小米平板</span></a> </li> 
+      <li class="nav-main-item"> <a href="http://www.mi.com/mitv40/"><span class="text">小米电视</span><span class="arrow"></span></a> 
+       <div class="nav-main-children"> 
+        <ul class="children-list clearfix"> 
+         <li class="first"> <a href="http://www.mi.com/mitv40/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv40-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv40-more.jpg 2x" alt="小米电视2 40英寸" width="140" height="140" /> </span> <span class="title">小米电视2 40英寸</span> <span class="desc">超级性价比智能电视</span> <span class="price"><b>1999</b>元</span> </a> </li> 
+         <li> <a href="http://www.mi.com/mitv/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv49-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv49-more.jpg 2x" alt="小米电视2 49英寸" width="140" height="140" /> </span> <span class="title">小米电视2 49英寸</span> <span class="desc">领先的49英寸4K电视</span> <span class="price"><b>3399</b>元起</span> </a> </li> 
+         <li> <a href="http://www.mi.com/mitv55/" class="item-detail J_item-detail-more"> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv55-more.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-mitv55-more.jpg 2x" alt="小米电视2 55英寸" width="140" height="140" /> </span> <span class="title">小米电视2 55英寸</span> <span class="desc">旗舰4K电视 家庭影院版</span> <span class="price"><b>4999</b>元</span> </a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-main-item"> <a href="http://www.mi.com/hezimini/"><span class="text">盒子</span><span class="arrow"></span></a> 
+       <div class="nav-main-children"> 
+        <ul class="children-list clearfix"> 
+         <li class="first"> <a class="item-detail" href="http://www.mi.com/hezimini/"> <span class="title">小米小盒子</span> <span class="desc">全球最小全高清网络机顶盒</span> <span class="price"><b>199</b>元</span> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hezimini.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-phone-hezimini_2x.jpg 2x" alt="小米Note" width="160" height="160" /> </span> </a> </li> 
+         <li> <a class="item-detail" href="http://www.mi.com/hezis/"> <span class="title">小米盒子 增强版</span> <span class="desc">首款4K超高清网络机顶盒</span> <span class="price"><b>299</b>元</span> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-hezis.jpg" srcset="http://c1.mifile.cn/f/i/2014/cn/nav/nav-hezis_2x.jpg 2x" alt="小米Note" width="160" height="160" /> </span> </a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-main-item"> <a href="javascript: void(0);"><span class="text">路由器</span><span class="arrow"></span></a> 
+       <div class="nav-main-children"> 
+        <ul class="children-list clearfix"> 
+         <li class="first"> <a class="item-detail" href="http://www.mi.com/miwifi/"> <span class="title">全新小米路由器</span> <span class="desc">顶配企业级性能<br />最高内置6TB监控级硬盘</span> <span class="price"><b>699</b>元起</span> <span class="thumb"> <img src="http://c1.mifile.cn/f/i/2014/cn/nav/nav-miwifi-router.jpg" alt="小米路由器" width="160" height="160" /> </span> </a> </li> 
+         <li> <a class="item-detail" href="http://www.mi.com/miwifimini/"> <span class="title">小米路由器 mini</span> <span class="desc">主流双频AC智能路由器<br />性价比之王</span> <span class="price"><b>129</b>元</span> <span class="thumb"> <img src="http://i1.mifile.cn/a1/T1XsATBCLT1RXrhCrK!160x160.jpg" alt="小米路由器 mini" width="160" height="160" /> </span> </a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-main-item"> <a href="http://heyue.mi.com/"><span class="text">合约机</span></a> </li> 
+      <li class="nav-main-item"> <a href="http://www.mi.com/service"><span class="text">服务</span></a> </li> 
+      <li class="nav-main-item"> <a href="http://www.xiaomi.cn"><span class="text">社区</span></a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+
+   <div class="open-buy-info"> 
+    <a href="http://hd.mi.com/f/buy/open/cn/index.html">6月16日开放购买</a> 
+   </div> 
+  </div> 
+  <!-- .site-header END --> 
+
+  <!-- xm-product-box 在product-hongmi2.min.css中，包含了可跟随浮动的菜单栏和大块图片区 -->
+  <div class="xm-product-box"> 
+   <!-- 可跟随浮动的菜单的原始位置 -->
+   <div class="hd nav-bar"> 
+    <div class="container"> 
+     <!-- 左侧的标题 -->
+     <div class="title"> 
+      <h2>红米手机2A <small> <span class="sep">|</span> <a href="/hongmi2/">红米手机2</a> </small> </h2> 
+     </div> 
+     <div class="nav"> 
+      <span class="nav-switch"> <a class="tab tab-active" href="/hongmi2a/">功能</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/miui/">MIUI</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/gallery/">图集</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/specs/">参数</a> <span class="separator">|</span> <a class="link" href="/service/safe/" target="_blank">意外保</a> <span class="separator">|</span> <a class="link" href="http://bbs.xiaomi.cn/forum/detail/fid/361" target="_blank">讨论区</a> <span class="separator">|</span> <a class="link" href="http://order.mi.com/queue/f2code" target="_blank">F码通道</a> </span> 
+      <a class="btn btn-primary btn-small" href="http://item.mi.com/buyphone/hongmi2a">立即购买</a> 
+     </div> 
+    </div> 
+   </div> 
+   <!--hd nav-bar END-->
+   <!-- 可跟随浮动的菜单栏 -->
+   <div class="bd"> 
+    <div class="nav-bar nav-bar-hidden J_fixNarBar"> 
+     <div class="container"> 
+      <div class="title"> 
+       <h2>红米手机2A <small> <span class="sep">|</span> <a href="/hongmi2/">红米手机2</a> </small> </h2> 
+      </div> 
+      <div class="nav"> 
+       <span class="nav-switch"> <a class="tab tab-active" href="/hongmi2a/">功能</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/miui/">MIUI</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/gallery/">图集</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/specs/">参数</a> <span class="separator">|</span> <a class="link" href="/service/safe/" target="_blank">意外保</a> <span class="separator">|</span> <a class="link" href="http://bbs.xiaomi.cn/forum/detail/fid/361" target="_blank">讨论区</a> <span class="separator">|</span> <a class="link" href="http://order.mi.com/queue/f2code" target="_blank">F码通道</a> </span> 
+       <a class="btn btn-primary btn-small" href="http://item.mi.com/buyphone/hongmi2a">立即购买</a> 
+      </div> 
+     </div> 
+    </div>
+    <!-- bd nav-bar END --> 
+
+    <!-- 大幅图片区域，在product-hongmi2a-overall.min.css中 -->
+    <div id="overall" class="hongmi2-overall J_miOneScroll"> 
+     <!-- 第一块区域是section-intro -->
+     <div class="section section-intro" data-title="概述"> 
+      <div class="container"> 
+       <!-- 文字描述部分 -->
+       <div class="content"> 
+        <h2 class="title">红米手机 <span class="model">2A</span></h2> 
+        <p class="text">千元 4G 双卡双待 性价比王牌<br />联芯 4 核 1.5GHz 处理器 / 4.7 英寸绝佳握感</p> 
+        <p class="price"> <b style="font-weight:normal;font-size:18px;color:#f33443;">无敌价 499元</b><br /> </p> 
+       </div> 
+      </div> 
+      <!-- 包含了4张较小图片01 02 03 04 -->
+      <div class="stage"> 
+       <div class="product-01"></div> 
+       <div class="product-02"></div> 
+       <div class="product-03"></div> 
+       <div class="product-04"></div> 
+      </div> 
+
+     </div> 
+
+     <div class="section section-performance" data-title="联芯4核"> 
+      <div class="container"> 
+       <div class="content"> 
+        <!-- 这一块区域中包含一个标签可切换里面的内容 -->
+        <ul class="tab-switch clearfix J_tabSwitch"> 
+         <li class="first active">处理器性能</li> 
+         <li class="last">GPU 性能</li> 
+        </ul> 
+        <div class="tab-container"> 
+         <div class="tab-content"> 
+          <h2 class="title">联芯 L1860C 4 核 1.5GHz 高性能处理器<br />玩游戏、看高清视频均游刃有余</h2> 
+          <p class="text">红米2A 采用联芯 L1860C 4 核处理器，主频升级为四核 1.5GHz，拥有强劲的运算性能，运行任何应用都可从容应对。红米2A 除了负责复杂任务的四个运算核芯，还搭载了一颗可变主频的“省电核芯”，专门处理待机状态、音乐等低运算量任务，从而大幅提升待机时间。它的四核性能可以带来流畅的使用体验，无论是看视频、浏览网页，或是玩大型3D游戏都游刃有余。</p> 
+         </div> 
+         <div class="tab-content hide"> 
+          <h2 class="title">Mali T628 双核图形处理器<br />游戏画面更逼真，也能玩得更久</h2> 
+          <p class="text">采用 Mali T628 双核图形处理器，每秒可渲染 10 亿像素点, 1 亿三角形，每秒都能呈现细节更多的游戏画面，效果更逼真。<br />支持 OpenGL ES 3.1，DirectX 11，OpenCL 1.1 等最新PC级别的高级图形处理标准，在手机上也能玩到最新的游戏特效。<br />同时使用 ARM 先进的 Transaction Elimination 技术，能更有效节省带宽，双核同时运行，但功耗仅为单核的1.5倍，<br />极大改善以往玩手机游戏耗电快的问题，带来更持久畅快的游戏体验！</p> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+
+     <div class="section section-4g" data-title="4G双卡双待"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">4G 双卡双待，网速可达 150Mbps</h2> 
+        <p class="text">支持移动 4G TDD-LTE 网络，理论峰值网速可达 150Mbps，这意味着在路上也能流畅地看超清视频，玩网络游戏。<br />它同时配备 2 个卡槽，支持 2 张手机卡同时待机。不必带 2 部手机，就可以同时启用生活号码和工作号码。<br />可选移动 4G 版。<a class="link" href="/hongmi2a/specs/#wire">了解全部支持制式</a></p> 
+       </div> 
+       <div class="stage">
+        <span class="speed"><span class="num J_jumpNum">150</span>Mbps</span>
+       </div> 
+      </div> 
+     </div> 
+     <div class="section section-screen" data-title="全贴合屏幕"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">夏普 / 友达等供应商，4.7 英寸 IPS 全贴合屏幕</h2> 
+        <p class="text">高端手机使用的全贴合工艺，现在千元机也可享用了！这意味着屏幕透光率大幅提升，强光下对比度更好。采用 IPS 技术，可视角度达 178&deg;，和朋友一起看电影不正对屏幕也能看清楚。分辨率为 1280 x 720，显示精度 312PPI。</p> 
+        <ul class="col-3-list feature-list clearfix"> 
+         <li><span class="icon-screen icon-screen-01"></span>全贴合工艺</li> 
+         <li><span class="icon-screen icon-screen-02"></span>IPS 技术</li> 
+         <li><span class="icon-screen icon-screen-03"></span>色温调节</li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section section-camera" data-title="5片式镜头"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">800 万像素背照式相机<br />5 片式镜头</h2> 
+        <p class="text">红米手机2A 相机镜头有5个精密镜片，比一般千元机型多一个镜片，从而改善画质成像更好。800 万像素的背照式相机支持特效滤镜、全景、连拍、声控快门等多种拍摄玩法，让拍照更加有趣。你也可以使用前置 200 万像素相机自拍，第二代 36 级智能美颜会根据年龄与性别自动美化，保留更多细节让美颜更真实。</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section section-design" data-title="绝佳握感"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">132 克轻巧，4.7 英寸绝佳握感</h2> 
+        <p class="text">拿起红米2A 的第一感觉是轻巧！132 克轻，9.4mm 薄，相同屏幕尺寸比第一代红米更加小巧，屏幕占比更大。<br />4.7 英寸屏幕手机能带来最佳的单手握感，专为贴合手掌设计的微弧背面，特殊工艺处理的后盖材质，让你爱不释手。</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section section-cover" data-title="多彩后盖"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">细腻手感，5 色多彩亲肤后盖</h2> 
+        <p class="text">生活是五彩缤纷的，红米2A 也有 5 种色彩。白色简约，深灰沉静，还有热情的明黄、生机勃勃的浅绿，女孩子还可以选择小清新的淡粉。颜色并不是红米2A 背面的全部，采用亚光喷涂耐油污漆面，防止指纹同时，还赋予手机更细腻的触感，摸起来就像触摸肌肤一样舒适。</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section section-miui" data-title="MIUI 6"> 
+      <div class="container"> 
+       <div class="content"> 
+        <h2 class="title">MIUI 6 来了，全球 1 亿 用户好评如潮</h2> 
+        <p class="text">现在，红米用户也可以使用 MIUI 6 让人心动的新特性了！例如公共场所免费 WiFi 功能，可在全国 20000 多个公共场所免费使用无线网络，节约流量。它还可帮你标记陌生号码，超过一半的推销、诈骗、中介电话被标记，再也不用担心爸妈上当受骗。贴心的 MIUI 黄页内置多种生活服务信息，可直接订餐、订房、订火车票或是查快递、叫代驾、挂号、买电影票。</p> 
+        <a class="link" href="/hongmi2a/miui/">了解 MIUI 6</a> 
+       </div> 
+      </div> 
+      <div class="miui-screen-caontainer"> 
+      </div> 
+     </div> 
+     <div class="section section-misc" data-title="硅麦，电池"> 
+      <div class="container"> 
+       <div class="content"> 
+        <div class="mic"> 
+         <h2 class="title">MEMS 硅麦克风<br />更好的降噪效果</h2> 
+         <p class="text">为了达到更好的通话效果，红米手机2A 采用上下 2 个硅麦克风，<br />相对普通的 ECM 麦克风，硅麦信噪比更高，能有效减少麦克风背景噪音，<br />在嘈杂的环境也能保证清晰的通话效果。</p> 
+         <span class="icon-mic"></span> 
+        </div> 
+        <div class="battery"> 
+         <span class="icon-battery"></span> 
+         <h2 class="title">2200mAh<br />Sony / LG 等锂离子聚合物电芯</h2> 
+         <p class="text">使用 Sony / LG 等国际一线电芯供应商，使用安全性更高的锂离子聚合物电芯，<br />典型容量达到 2265mAh，额定容量为 2200mAh。<br />配备 Switching Charge 快充技术，大幅缩短充电时间，快速充电。</p> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="product-container"> 
+       <div class="product"></div> 
+      </div> 
+     </div> 
+     <div class="section section-summary" data-title="汇总"> 
+      <ul class="col-4-list clearfix"> 
+       <li class="col-01"> 
+        <div class="content"> 
+         <h3>联芯 4 核 1.5GHz 处理器</h3> 
+         <p>4 核 Cortex-A7 1.5GHz 处理器<br />独立低功耗省电核芯</p> 
+        </div> </li> 
+       <li class="col-02"> 
+        <div class="content"> 
+         <h3>4G 双卡双待</h3> 
+         <p>支持 2 张手机卡同时待机<br />支持 TDD-LTE 网络</p> 
+        </div> </li> 
+       <li class="col-03"> 
+        <div class="content"> 
+         <h3>绝佳手感</h3> 
+         <p>仅 132 克轻<br />4.7 英寸绝佳单手握感</p> 
+        </div> </li> 
+       <li class="col-04"> 
+        <div class="content"> 
+         <h3>青春多彩</h3> 
+         <p>冰激淋 5 色后盖，磨砂淡彩效果<br />哑光设计，肌肤触感</p> 
+        </div> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="ft nav-bar"> 
+    <div class="container"> 
+     <div class="title"> 
+      <h2>红米手机2A <small> <span class="sep">|</span> <a href="/hongmi2/">红米手机2</a> </small> </h2> 
+     </div> 
+     <div class="nav"> 
+      <span class="nav-switch"> <a class="tab tab-active" href="/hongmi2a/">功能</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/miui/">MIUI</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/gallery/">图集</a> <span class="separator">|</span> <a class="tab" href="/hongmi2a/specs/">参数</a> <span class="separator">|</span> <a class="link" href="/service/safe/" target="_blank">意外保</a> <span class="separator">|</span> <a class="link" href="http://bbs.xiaomi.cn/forum/detail/fid/361" target="_blank">讨论区</a> <span class="separator">|</span> <a class="link" href="http://order.mi.com/queue/f2code" target="_blank">F码通道</a> </span> 
+      <a class="btn btn-primary btn-small" href="http://item.mi.com/buyphone/hongmi2a">立即购买</a> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+  <div class="site-footer"> 
+   <div class="container"> 
+    <div class="footer-service"> 
+     <ul class="list-service clearfix"> 
+      <li> <a rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank"> <i class="iconfont"></i> <strong>1小时快修服务</strong> </a> </li> 
+      <li> <a rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank"> <i class="iconfont"></i> <strong>7天无理由退货</strong> </a> </li> 
+      <li> <a rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank"> <i class="iconfont"></i> <strong>15天免费换货</strong> </a> </li> 
+      <li> <a rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank"> <i class="iconfont"></i> <strong>满150元包邮</strong> </a> </li> 
+      <li> <a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank"> <i class="iconfont"></i> <strong>520余家售后网点</strong> </a> </li> 
+     </ul> 
+    </div> 
+    <div class="footer-links clearfix"> 
+     <dl class="col-links col-links-first"> 
+      <dt>
+       帮助中心
+      </dt> 
+      <dd>
+       <a rel="nofollow" href="http://wiki.xiaomi.cn/%E5%B0%8F%E7%B1%B3%E7%BD%91%E8%B4%AD%E7%89%A9%E6%B5%81%E7%A8%8B" target="_blank">购物指南</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://wiki.xiaomi.cn/%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F" target="_blank">支付方式</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://wiki.xiaomi.cn/%E7%AC%AC%E4%B8%89%E6%96%B9%E9%85%8D%E9%80%81" target="_blank">配送方式</a>
+      </dd> 
+     </dl> 
+     <dl class="col-links "> 
+      <dt>
+       服务支持
+      </dt> 
+      <dd>
+       <a rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank">售后政策</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://fuwu.mi.com/" target="_blank">自助服务</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://xiazai.mi.com/" target="_blank">相关下载</a>
+      </dd> 
+     </dl> 
+     <dl class="col-links "> 
+      <dt>
+       小米之家
+      </dt> 
+      <dd>
+       <a rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank">小米之家</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank">服务网点</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank">预约亲临到店服务</a>
+      </dd> 
+     </dl> 
+     <dl class="col-links "> 
+      <dt>
+       关于小米
+      </dt> 
+      <dd>
+       <a rel="nofollow" href="http://www.mi.com/about" target="_blank">了解小米</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://hr.xiaomi.com/" target="_blank">加入小米</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://www.mi.com/about/contact" target="_blank">联系我们</a>
+      </dd> 
+     </dl> 
+     <dl class="col-links "> 
+      <dt>
+       关注我们
+      </dt> 
+      <dd>
+       <a rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank">新浪微博</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank">小米部落</a>
+      </dd> 
+      <dd>
+       <a rel="nofollow" class="J_modalWeixin" href="javascript: void(0);">官方微信</a>
+      </dd> 
+     </dl> 
+     <div class="col-contact"> 
+      <p class="phone">400-100-5678</p> 
+      <p>周一至周日 8:00-18:00<br />（仅收市话费）</p> 
+      <a rel="nofollow" class="btn btn-primary btn-small" href="http://www.mi.com/service/contact" target="_blank">24小时在线客服</a> 
+     </div> 
+    </div> 
+    <div class="footer-info clearfix"> 
+     <div class="info-text"> 
+      <p>小米旗下网站：<a href="http://www.mi.com/index.html" target="_blank">小米网</a><span class="sep">|</span><a href="http://www.miui.com/" target="_blank">MIUI</a><span class="sep">|</span><a href="http://www.miliao.com/" target="_blank">米聊</a><span class="sep">|</span><a href="http://www.duokan.com/" target="_blank">多看书城</a><span class="sep">|</span><a href="http://www.miwifi.com/" target="_blank">小米路由器</a><span class="sep">|</span><a href="http://www.mi.com/hk/" target="_blank">繁體香港</a><span class="sep">|</span><a href="http://www.mi.com/tw/" target="_blank">繁體台灣</a><span class="sep">|</span><a href="http://www.mi.com/en/" target="_blank">English</a><span class="sep">|</span><a href="http://blog.xiaomi.com/" target="_blank">小米后院</a><span class="sep">|</span><a href="http://xiaomi.tmall.com/" target="_blank">小米天猫店</a><span class="sep">|</span><a href="http://shop115048570.taobao.com" target="_blank">小米淘宝直营店</a><span class="sep">|</span><a href="http://union.mi.com/" target="_blank">小米网盟</a> </p> 
+      <p>&copy;<a href="http://www.mi.com/" target="_blank" title="mi.com">mi.com</a> 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 <a href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank">京网文[2014]0059-0009号</a></p> 
+     </div> 
+     <div class="info-sites J_globalList"> 
+      <div class="global-site-current">
+       简体中文
+      </div> 
+      <span class="arrow"></span> 
+      <ul class="global-site-list"> 
+       <li><a href="http://www.mi.com/en/">English</a></li> 
+       <li><a href="http://www.mi.com/tw/">繁體台灣</a></li> 
+       <li><a href="http://www.mi.com/hk/">繁體香港</a></li> 
+       <li><a href="http://www.mi.com/sg/">Singapore</a></li> 
+       <li><a href="http://www.mi.com/my/">Malaysia</a></li> 
+       <li><a href="http://www.mi.com/in/">India</a></li> 
+       <li><a href="http://www.mi.com/ph/">Philippines</a></li> 
+       <li><a href="http://www.mi.com/id/">Indonesia</a></li> 
+       <li><a href="http://www.mi.com/">简体中文</a></li> 
+      </ul> 
+     </div> 
+     <div class="info-links"> 
+      <a href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082" target="_blank"><img src="http://s1.mi.com/zt/12052601/cnnicVerifyseal.png" alt="可信网站" /></a> 
+      <a href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank"><img src="http://s1.mi.com/zt/12052601/szfwVerifyseal.gif" alt="诚信网站" /></a> 
+      <a href="http://www.315online.com.cn/member/315140007.html" target="_blank"><img src="http://s1.mi.com/zt/12052601/save.jpg" alt="网上交易保障中心" /></a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!-- .site-footer END --> 
+  <div id="loginBox" class="modal modal-login hide" data-width="420" data-width-sns="420" data-height="430"> 
+   <a class="close" data-dismiss="modal" href="javascript: void(0);"><i class="iconfont"></i></a> 
+   <div class="modal-body" id="loginBox-con"> 
+    <p class="loginBox-loading">数据加载中，请稍后...</p> 
+   </div> 
+  </div> 
+  <!-- .modal-login END --> 
+  <div id="J_modalWeixin" class="modal fade hide modal-weixin" data-width="480" data-height="520"> 
+   <div class="modal-header"> 
+    <a class="close" data-dismiss="modal"><i class="iconfont"></i></a> 
+    <h3>小米手机官方微信二维码</h3> 
+   </div> 
+   <div class="modal-body" style="padding-top: 10px;"> 
+    <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br />对准下方二维码即可。</p> 
+    <img alt="" src="http://c1.mifile.cn/f/i/2014/cn/qr.png" /> 
+   </div> 
+  </div> 
+  <!-- .modal-weixin END --> 
+  <div class="modal hide xm-dm-queue" id="xmDmQueue"> 
+   <div class="modal-body"> 
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span> 
+    <h3>正在排队，请稍候喔！</h3> 
+    <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br />我们将在稍后告诉您排队结果。</p> 
+    <div class="queue-animate"> 
+     <div id="mituWalking" class="mitu-walk"> 
+     </div> 
+     <div class="animate-mask animate-mask-left"></div> 
+     <div class="animate-mask animate-mask-right"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <!-- .xm-dm-queue END --> 
+  <div id="xmDmError" class="modal hide xm-dm-error"> 
+   <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span> 
+   <div class="modal-body"> 
+    <h3>抱歉，网络拥堵无法连接服务器</h3> 
+    <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p> 
+    <p> <a class="btn btn-primary" id="xmDmReload">重试</a> </p> 
+   </div> 
+  </div> 
+  <!-- .xm-dm-error END --> 
+  <div class="modal fade hide modal-globalSites" data-width="640" id="J_modal-globalSites"> 
+   <span class="close" data-dismiss="modal"><i class="iconfont"></i></span> 
+   <div class="modal-body"> 
+    <h3>Welcome to Mi.com</h3> 
+    <p class="modal-globalSites-tips">Please select your country or region</p> 
+    <p class="modal-globalSites-links clearfix"> <a href="http://www.mi.com/index.html">Mainland China</a> <a href="http://www.mi.com/hk/">Hong Kong</a> <a href="http://www.mi.com/tw/">Taiwan</a> <a href="http://www.mi.com/sg/">Singapore</a> <a href="http://www.mi.com/my/">Malaysia</a> <a href="http://www.mi.com/ph/">Philippines</a> <a href="http://www.mi.com/in/">India</a> <a href="http://www.mi.com/id/">Indonesia</a> <a href="http://www.mi.com/en/">Global Home</a> </p> 
+   </div> 
+  </div> 
+  <!-- .modal-globalSites END --> 
+  <script src="http://www.mi.com/js/base.min.js?2014112001"></script> 
+  <script>
+        XIAOMI.namespace("GLOBAL_CONFIG,GLOBAL_VAR");
+        XIAOMI.GLOBAL_CONFIG = {
+            orderSite:"http://order.mi.com",
+            wwwSite:"http://www.mi.com",
+            cartSite:"http://cart.mi.com",
+            itemSite:"http://item.mi.com",
+            listSite:"http://list.mi.com",
+            searchSite:"http://search.mi.com",
+            mySite:"http://my.mi.com",
+            damiaoSite:"http://tp.hd.mi.com/",
+            damiaoGoodsId:["2150900016","2150900017","2151300011","2151300012","1151600007","2151900001","2152300005"],
+            logoutUrl:"http://order.mi.com/site/logout",
+            staticSite: "http://static.mi.com",
+            quickLoginUrl:"https://account.xiaomi.com/pass/static/login.html",
+            //图片上传路径地址
+            uploadUrl:"http://viewapi.xiaomi.com",
+            //图片远程存储地址
+            imgSaveUrl:"http://img06.mifile.cn/v1/MI_574AF0887F5D0",
+            //评论查询地址
+            commentUrl:"http://test.comment.com",
+            //评论Api地址
+            commentApiUrl:"http://comment.order.mi.com",
+            //侧边栏数据接口
+            sideBarApiUrl:"http://prs.www.xiaomi.com"
+        }
+        XIAOMI.app.setLoginInfo.orderUrl = XIAOMI.GLOBAL_CONFIG.orderSite + '/user/order';
+        XIAOMI.app.setLoginInfo.logoutUrl = XIAOMI.GLOBAL_CONFIG.logoutUrl;
+        XIAOMI.app.setLoginInfo.init(XIAOMI.GLOBAL_CONFIG);
+        //全站需要直接执行的函数
+        jQuery(function ($) {
+            var oLogin = new XIAOMI.app.miniLogin();
+            oLogin.init();
+            // 搜索
+            XIAOMI.app.search.init();
+            // miniCart
+            XIAOMI.app.miniCart.init();
+            // 更新miniCart数量
+            XIAOMI.app.updateMiniCart();
+            // 商品分类导航
+            XIAOMI.app.navMenus.init($('.J_menuNavMain'), {
+                menuSelector: '.nav-main-item',
+                submenuSelector: '.nav-main-children',
+                effect: 'slide',
+                triggerEvent: 'hover'
+            });
+            XIAOMI.app.navCategory.init();
+            // 绑定尾部公共事件
+            XIAOMI.app.footer.init();
+        });
+    </script> 
+  <script type="text/javascript" src="productHongmi2.min.js"></script> 
+  <script type="text/javascript" src="mi1scroll.min.js"></script> 
+  <script type="text/javascript" src="slides.js"></script> 
+  <script type="text/javascript" src="productHongmi2Overall.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="product-hongmi2a-overall.min.css" /> 
+  <script>
+        var _hmt = _hmt || [];
+        jQuery(function() {
+            //BD流量统计数组定义
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?4982d57ea12df95a2b24715fb6440726";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        });
+        //流量统计平台
+        var _msq = _msq || [] ;
+        _msq.push(['setDomainId',100]);
+        _msq.push(['trackPageView']);
+        (function() {
+            var ms = document.createElement('script');
+            ms.type ='text/javascript';
+            ms.async = true ;
+            ms.src = 'xmst.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ms,s);
+        })();
+    </script>  
+ </body>
+</html>

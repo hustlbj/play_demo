@@ -1,0 +1,122 @@
+.xm-product-box .hd {
+	border-bottom: 1px solid #ededed;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px
+}
+
+.xm-product-box .hd .separator {
+	margin: 0 5px
+}
+
+.xm-product-box .ft {
+	border-top: 1px solid #ededed;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-right-radius: 4px
+}
+
+.xm-product-box .nav-bar {
+	margin-top: 15px;
+	position: relative;
+	height: 50px;
+	color: #6d6d6d;
+	background: #fff
+}
+
+.xm-product-box .nav-bar .title {
+	float: left;
+	_display: inline;
+	margin: 10px 0 0 0
+}
+
+.xm-product-box .nav-bar .title h2 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #333
+}
+
+.xm-product-box .nav-bar .title small {
+	font-size: 12px
+}
+
+.xm-product-box .nav-bar .title .separator {
+	margin: 0 5px
+}
+
+.xm-product-box .nav-bar .nav {
+	float: right;
+	_display: inline;
+	margin: 10px 0 0 0
+}
+
+.xm-product-box .nav-bar .nav .nav-switch {
+	margin-right: 10px;
+	line-height: 30px
+}
+
+.xm-product-box .nav-switch .separator {
+	margin: 0 5px;
+	color: #f3f3f3
+}
+
+.xm-product-box .nav-switch .tab,.xm-product-box .nav-switch .link {
+	color: #6d6d6d
+}
+
+.xm-product-box .nav-switch .tab:hover,.xm-product-box .nav-switch .link:hover {
+	color: #6d6d6d
+}
+
+.xm-product-box .nav-switch .tab-active {
+	color: #ee330a;
+	cursor: default
+}
+
+.xm-product-box .nav-switch .tab-active:hover {
+	color: #ee330a
+}
+
+.xm-product-box .separator {
+	font-family: sans-serif
+}
+
+.xm-product-box .btn-disable {
+	cursor: default
+}
+
+.xm-product-box .btn-disable:hover {
+	background: #6d6d6d
+}
+
+.xm-product-box .btn-disable:active {
+	background: #6d6d6d;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none
+}
+
+.xm-product-box .bd {
+	overflow: hidden;
+	*zoom: 1
+}
+
+.xm-product-box .ft {
+	margin-top: 0
+}
+
+.xm-product-box .nav-bar .title .sep {
+	margin: 0 5px
+}
+
+.xm-product-box .nav-switch .tab:hover,.xm-product-box .nav-switch .link:hover {
+	color: #ee330a
+}

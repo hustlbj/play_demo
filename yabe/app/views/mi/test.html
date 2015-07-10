@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360免费送windows 10</title>
+    <style>
+    body {
+    	margin:0;
+    	padding:0;
+    	font-family:'microsoft yahei'
+    }
+    /*把整个body分成一大块一大块的画布如header、sesafe、video这些最外层div，这个最外层div还控制这这一块画布的背景，宽度满屏，高度610px
+      背景纯色是通过重复一个窄条图片来铺满整块画布的，图片大小参考5 * height 
+      一块画布中，有一个容器div叫做container，用来放置具体的内容，宽度1000px
+      然后在container中就可以放置元素了如logo、title、sub_title等图片，这些图片一般是透明背景，所以就可以显示出画布的背景*/
+    .container {
+    	width:1000px;
+    	margin:0 auto
+    }
+    #header {
+    	width:100%;
+    	height:610px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/header_bg.png")
+    }
+    #header .container {
+    	position:relative;
+    	height:590px;
+    	padding-top:20px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/microsoft_bg.png") 460px 0 no-repeat
+    }
+    #header .logo {
+    	width:294px;
+    	height:39px;
+    	background:url("http://p0.qhimg.com/d/inn/13ba5ace/logo.png") no-repeat
+    }
+    #header .title {
+    	width:396px;
+    	height:153px;
+    	padding-top:90px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/title.png") bottom no-repeat
+    } 
+    #header .sub_title {
+    	width:482px;
+    	height:27px;
+    	padding-top:40px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/sub_title.png") bottom no-repeat
+    }
+    #header .down_helper { 
+    	width:320px;
+    	height:86px;
+    	padding-top:75px
+    }
+    #header .down_helper a { 
+    	display:block;
+    	width:320px;
+    	height:86px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/down_helper.png") center
+    }
+    #header .down_helper a:hover {
+    	opacity:.95
+    }
+    #header .soft_box {
+    	width:310px;
+    	height:410px;
+    	position:absolute;
+    	right:0;top:0;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/soft_box.png") left bottom no-repeat
+    }
+    #header .tuesday {
+    	width:441px;
+    	height:150px;
+    	position:absolute;
+    	bottom:60px;
+    	right:60px
+    }
+    #header .tuesday a {
+    	display:block;
+    	width:441px;
+    	height:150px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/tuesday.png") no-repeat
+    }
+    #sesafe {
+    	width:100%;
+    	height:610px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/sesafe_bg.png") center
+    }
+    #sesafe .container {
+    	height:610px;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/sesafe_bg.png") center
+    }
+    #sesafe .sesafe_edge {
+    	width:909px;
+    	height:39px;
+    	margin:0 auto;
+    	padding:80px 0 70px 0;
+    	background:url("http://p0.qhimg.com/d/inn/a0a5a67c/sesafe_edge.png") center 80px no-repeat
+    }
+    #sesafe .soft {
+    	padding:0 15px;
+    	overflow:hidden
+    }
+	#sesafe .soft .safe {
+		width:428px;
+		float:left
+	}
+	#sesafe .soft .safe a {
+		display:block;
+		width:428px;
+		height:270px;
+		border:8px solid #abecb8;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/360safe.png") center no-repeat
+	}
+	#sesafe .soft .safe .desc {
+		text-align:center;
+		line-height:48px;
+		font-size:14px;
+		color:#177438
+	}
+	#sesafe .soft .se {
+		width:428px;
+		float:right
+	}
+	#sesafe .soft .se a {
+		display:block;
+		width:428px;
+		height:270px;
+		border:8px solid #abecb8;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/360se.png") center no-repeat
+	}
+	#sesafe .soft .se .desc {
+		text-align:center;
+		line-height:24px;
+		font-size:14px;
+		color:#177438
+	}
+	#video {
+		width:100%;
+		height:610px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/video_bg.png") center
+	}
+	#video .container {
+		height:610px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/video_bg.png") center
+	}
+	#video .why {
+		width:432px;
+		overflow:hidden;
+		float:right;
+		padding:80px 10px 0 10px
+	}
+	#video .why img {
+		border:0;
+		padding-top:20px
+	}
+	#video .why p {
+		line-height:1.7;
+		font-size:16px;
+		color:#056d72
+	}
+	#video .iframe {
+		width:480px;
+		height:340px;
+		margin:100px 0 0 10px;
+		float:left
+	}
+	#video .iframe .v {
+		width:460px;
+		height:320px;
+		border:10px solid #58dce1
+	}
+	#video .iframe .v iframe {
+		margin:0;
+		padding:0;
+		border:0;
+		overflow:hidden;
+		width:460px;
+		height:320px
+	}
+	#advantage {
+		width:100%;
+		height:610px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/advantage_bg.png")
+	}
+	#advantage .container {
+		height:610px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/advantage.png") center no-repeat
+	}
+	#guide {
+		width:100%;
+		height:610px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/guide_bg.png")
+	}
+	#guide .container {
+		height:610px;
+		background:url("http://p8.qhimg.com/d/inn/18fe5c35/guide.png") center no-repeat
+	}
+	#footer {
+		width:100%;
+		height:110px;
+		background-color:#2f363f
+	}
+	#footer .container {
+		line-height:110px;
+		font-size:14px;
+		text-align:center;
+		color:#fff
+	}
+	#fixed {
+		width:160px;
+		height:240px;
+		position:fixed;
+		right:20px;
+		bottom:40px
+	}
+	#fixed .weibo {
+		width:160px;
+		height:88px;
+		position:absolute;
+		bottom:0;
+		left:0
+	}
+	#fixed .weibo a {
+		display:block;
+		margin:0 auto;
+		width:88px;
+		height:88px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/weibo.png") no-repeat
+	}
+	#fixed .lottery {
+		width:160px;
+		height:92px;
+		position:absolute;
+		bottom:110px;
+		left:0
+	}
+	#fixed .lottery a {
+		display:block;
+		margin:0 auto;
+		width:160px;
+		height:92px;
+		background:url("http://p0.qhimg.com/d/inn/a0a5a67c/lottery.png") no-repeat
+	}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<div class="logo"></div>
+			<div class="title"></div>
+			<div class="sub_title"></div>
+			<div class="down_helper"><a href="http://dl.360safe.com/360win10uper/win10uper.exe"></a></div>
+			<div class="soft_box"></div>
+			<div class="tuesday"><a target="_blank" href="http://www.360.cn/huodong/win10/tuesday/index.html"></a></div>
+		</div>
+	</div>
+	<div id="sesafe">
+		<div class="container">
+			<div class="sesafe_edge"></div>
+			<div class="soft">
+				<div class="safe">
+					<a href="http://dl.360safe.com/setupforwindows10.exe"></a>
+					<p class="desc">360安全卫士for win10专版</p>
+				</div>
+				<div class="se">
+					<a href="http://down.360safe.com/se/360se7.3.0.136.exe"></a>
+					<p class="desc">360安全浏览器7.3Beta版<br/>（为win10而生，完美支持Microsoft Edge浏览器）</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="video">
+		<div class="container">
+			<div class="why">
+				<img src="http://p0.qhimg.com/d/inn/a0a5a67c/bc_free.png" alt="因免费携手 - 官方合作 强强联手">
+				<p>360公司开创的免费安全颠覆了安全行业，互联网时代，软件免费已经是大势所趋，微软将Win10免费，可让更多的用户使用Win10的创新技术。</p>
+				<img src="http://p0.qhimg.com/d/inn/a0a5a67c/bc_safe.png" alt="因安全结盟 - 极致升级 安全守护">
+				<p>360作为微软最重要的合作伙伴，2009年至今因发现并协助修复漏洞已获得68次微软官方致谢，在全球安全软件厂商中排名第一；2014年XP停服后，360与微软合作，继续保护着数亿XP用户的安全。此次微软选择360作为Win10唯一安全合作伙伴，帮助数亿中国用户以最好的体验免费升级到Win10。</p>
+			</div>
+			<div class="iframe">
+				<div class="v"><iframe scrolling='none' frameborder='0' src="http://yuntv.letv.com/bcloud.html?uu=789b624579&vu=728ad1f729&auto_play=0&gpcflag=1&width=460&height=320"></iframe></div>
+			</div>
+		</div>
+	</div>
+	<div id="advantage">
+		<div class="container"></div>
+	</div>
+	<div id="guide">
+		<div class="container"></div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			Copyright © 2005-2015 360.CN All Rights Reserved 360互联网安全中心
+		</div>
+	</div>
+	<div id="fixed">
+		<div class="lottery"><a target="_blank" href="http://www.360.cn/huodong/win10/tuesday/index.html"></a></div>
+		<div class="weibo"><a target="_blank" id="weiboUrl" href="#"></a></div>
+	</div>
+</body>
+<script>var url="http://360.cn/huodong/win10/",imgUrl="http://p7.qhimg.com/d/inn/dae9f9ee/14.pic_hd.jpg",content="\u3010#360\u514d\u8d39\u9001Win10# \u5468\u4e8c\u62bd\u5956Feel\u500d\u513f\u723d\u3011 \u636e360\u4e92\u8054\u7f51\u5b89\u5168\u4e2d\u5fc3\u7edf\u8ba1\uff0c\u4f7f\u7528\u5347\u7ea7\u540e\u7684 [Win10\u5347\u7ea7\u52a9\u624b] \u7528\u6237\u5df2\u8d85\u8fc7500\u4e07\uff01\u73b0\u5728\uff0c\u53ea\u8981\u662f360\u5b89\u5168\u536b\u58eb\u7528\u6237\u5e76\u6253\u5f00360\u514d\u8d39\u5347Win10\u5de5\u5177\uff0c\u5373\u53ef\u83b7\u5f97\u4e00\u6b21\u62bd\u5956\u673a\u4f1a\uff01\u8be6\u60c5\u6233\uff1ahttp://t.cn/RAv6C2Z \u8f6c\u53d1\u6536\u85cf\uff0c\u522b\u5fd8\u4e86\u5468\u4e8c\u62bd\uff01",weiboUrl="http://service.weibo.com/share/share.php?title="+encodeURIComponent(content)+"&pic="+encodeURIComponent(imgUrl);document.getElementById("weiboUrl").href=weiboUrl</script>
+</html>

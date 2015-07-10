@@ -95,5 +95,6 @@ public class BasicTest extends UnitTest {
     	assertEquals(2, User.count());
     	assertEquals(3, Post.count());
     	assertEquals(3, Comment.count());
+    	
     }
 }

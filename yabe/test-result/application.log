@@ -1,11 +1,11 @@
-08 四月 2015 17:26:40,764 INFO  ~ Starting E:\github\play_demo\yabe
-08 四月 2015 17:26:41,989 WARN  ~ You're running Play! in DEV mode
-08 四月 2015 17:26:42,094 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-08 四月 2015 17:28:52,456 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
-08 四月 2015 17:28:53,721 INFO  ~ Application 'yabe' is now started !
-08 四月 2015 20:30:04,707 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
-08 四月 2015 20:30:04,708 ERROR ~ Table "POST" not found; SQL statement:
-alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
-08 四月 2015 21:59:45,231 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
-08 四月 2015 21:59:45,231 ERROR ~ Table "COMMENT" not found; SQL statement:
+09 七月 2015 16:23:46,819 INFO  ~ Starting E:\github\play_demo\yabe
+09 七月 2015 16:23:48,290 WARN  ~ You're running Play! in DEV mode
+09 七月 2015 16:23:48,418 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+09 七月 2015 16:23:57,435 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+09 七月 2015 16:23:58,564 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+09 七月 2015 16:23:58,566 ERROR ~ Table "COMMENT" not found; SQL statement:
 alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+09 七月 2015 16:23:58,567 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+09 七月 2015 16:23:58,568 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+09 七月 2015 16:23:58,646 INFO  ~ Application 'yabe' is now started !

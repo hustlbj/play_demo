@@ -11,5 +11,12 @@ GET     /favicon.ico                            404
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
-# Catch all
+# 默认的URL是/application/show?id=1，我们将其映射成/posts/{id}
+GET		/posts/{id}								Application.show
+
+GET		/posts/{postId}/comments				Application.postComment
+
+GET 	/captcha								Application.captcha
+
+# Catch all，优先匹配前面的规则
 *       /{controller}/{action}                  {controller}.{action}
