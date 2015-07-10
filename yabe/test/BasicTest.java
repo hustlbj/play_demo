@@ -97,4 +97,21 @@ public class BasicTest extends UnitTest {
     	assertEquals(3, Comment.count());
     	
     }
+    
+    @Test
+    public void testTags() {
+    	User savage = new User("demo5@oopsplay.org", "123", "savage").save();
+    	
+    	Post savagePost = new Post(savage, "My first post", "Hello world!!!!!").save();
+    	Post anotherPost= new Post(savage, "My Second post", "Hello aaaaaa!!!!!").save();
+    	
+    	assertEquals(0, Post.findTaggedWith("Red").size());
+    	
+    	savagePost.tagItWith("Red").tagItWith("Blue").save();
+    	anotherPost.tagItWith("Red").tagItWith("Green").save();
+    	
+    	assertEquals(2, Post.findTaggedWith("Red").size());
+    	assertEquals(1, Post.findTaggedWith("Blue").size());
+    	assertEquals(1, Post.findTaggedWith("Green").size());
+    }
 }
